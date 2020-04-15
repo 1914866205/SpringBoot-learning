@@ -1,5 +1,6 @@
 package com.soft1851.spring.boot.jwt.exception;
 
+import com.auth0.jwt.exceptions.InvalidClaimException;
 import com.soft1851.spring.boot.jwt.common.ResponseResult;
 import com.soft1851.spring.boot.jwt.common.ResultCode;
 import lombok.extern.slf4j.Slf4j;
@@ -29,6 +30,19 @@ public class GlobalExceptionHandler {
     public ResponseResult sendError(JwtException exception) {
         log.error(exception.getMessage());
         return ResponseResult.failure(exception.getResultCode());
+    }
+
+
+    /**
+     * InvalidClaimException异常处理
+     * @param exception
+     * @return
+     */
+    @ExceptionHandler(value = {InvalidClaimException.class})
+    @ResponseBody
+    public ResponseResult sendError(InvalidClaimException exception) {
+        log.error(exception.getMessage());
+        return ResponseResult.failure(ResultCode.USER_TOKEN_EXPIRES);
     }
 
 
