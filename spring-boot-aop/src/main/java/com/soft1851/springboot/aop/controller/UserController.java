@@ -2,7 +2,6 @@ package com.soft1851.springboot.aop.controller;
 
 import com.soft1851.springboot.aop.annotation.AuthToken;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -36,8 +35,10 @@ public class UserController {
     @GetMapping("user")
     @AuthToken
     public String user(String name) {
-        log.info("user()需要认证,当前用户名：" + name);
-        return "user()方法访问成功";
+//        log.info("user()需要认证,当前用户名：" + name);
+        log.info("班级成员需要认证,当前用户名：" + name);
+//        return "user()方法访问成功";
+        return "班级成员访问成功";
     }
 
     /**
@@ -50,8 +51,8 @@ public class UserController {
     @GetMapping("admin")
     @AuthToken(role_name = {"admin","Admin"})
     public String admin(String name) {
-        log.info("admin()需要鉴权,当前用户名：" + name);
+//        log.info("admin()需要鉴权,当前用户名：" + name);
+        log.info("助教需要鉴权,当前用户名：" + name);
         return "admin()方法访问成功";
     }
-
 }

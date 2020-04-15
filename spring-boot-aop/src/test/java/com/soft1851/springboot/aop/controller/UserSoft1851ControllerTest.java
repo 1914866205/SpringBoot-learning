@@ -13,10 +13,9 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-//@SpringBootTest(classes = {StartApplication.class, MockServletContext.class })
 @SpringBootTest
 @WebAppConfiguration
-@ComponentScan(basePackages = "com.soft1851.start")
+@ComponentScan(basePackages = "com.soft1851.springboot.aop")
 class UserSoft1851ControllerTest {
     //用于模拟调用Controller的接口发起请求
     @Autowired
@@ -26,7 +25,6 @@ class UserSoft1851ControllerTest {
     //预加载内容，用来初始化对UserController的
     @BeforeEach
     public void setUp() throws Exception {
-//        mockMvc = MockMvcBuilders.standaloneSetup(new UserController()).build();
         mockMvc=MockMvcBuilders.webAppContextSetup(this.context).build();
         System.out.println(mockMvc);
     }

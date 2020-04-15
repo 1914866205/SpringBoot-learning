@@ -16,7 +16,7 @@ public interface UserMapper {
      * 查询所有用户
      * @return
      */
-//    @Select("SELECT * FROM springtest.t_student")
     @Select("SELECT * FROM db_spring.t_user order by ranking")
     List<User> selectAll();
+
 }

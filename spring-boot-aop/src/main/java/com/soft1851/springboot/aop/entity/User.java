@@ -20,7 +20,7 @@ import java.util.Date;
 @NoArgsConstructor
 public class User implements Serializable {
     private static final long serialVersionUID = -10493903982420480L;
-    
+
     private String userId;
 
     private String emailFlag;

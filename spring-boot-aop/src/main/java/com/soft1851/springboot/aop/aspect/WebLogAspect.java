@@ -134,16 +134,16 @@ public class WebLogAspect {
     public Object doAround(ProceedingJoinPoint proceedingJoinPoint)throws Throwable {
         log.info("这里是环绕增强");
         //得到开始时间
-        long startTime = System.currentTimeMillis();
+//        long startTime = System.currentTimeMillis();
         //执行连接点的目标方法getHello()
         Object ob = proceedingJoinPoint.proceed();
-        Map<String, Object> threadInfo = threadLocal.get();
+//        Map<String, Object> threadInfo = threadLocal.get();
         //计算出方法的真实执行时间，可以在目标方法中加入线程休眠体会效果
-        Long takeTime = System.currentTimeMillis() - startTime;
+//        Long takeTime = System.currentTimeMillis() - startTime;
         //存入线程变量
-        threadInfo.put("takeTime", takeTime);
-        log.info("耗时："+takeTime);
-        threadLocal.set(threadInfo);
+//        threadInfo.put("takeTime", takeTime);
+//        log.info("耗时："+takeTime);
+//        threadLocal.set(threadInfo);
         return ob;
     }
 

@@ -13,7 +13,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 @SpringBootTest
 @WebAppConfiguration
-@ComponentScan(basePackages = "com.soft1851.boot.aop.controller")
+@ComponentScan(basePackages = "com.soft1851.springboot.aop.controller")
 class HelloControllerTest {
     //用于模拟调用Controller的接口发起请求
     private MockMvc mockMvc;
