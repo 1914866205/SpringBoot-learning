@@ -47,6 +47,6 @@
   "pkColumn" : null,
   "otherColumn" : null,
   "savePackageName" : "",
-  "savePath" : "./spring-boot-aop/src/main/java/com/soft1851/springboot/aop/entity",
-  "saveModelName" : "spring-boot-aop"
+  "savePath" : "./spring-boot-mybatis-plus/src/main/java",
+  "saveModelName" : "spring-boot-mybatis-plus"
 }

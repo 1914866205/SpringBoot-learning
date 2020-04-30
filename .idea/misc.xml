@@ -6,6 +6,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-aop/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mybatis-plus/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-oauth/pom.xml" />
+        <option value="$PROJECT_DIR$/validator/pom.xml" />
       </list>
     </option>
   </component>

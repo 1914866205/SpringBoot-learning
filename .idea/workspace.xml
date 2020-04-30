@@ -2,7 +2,139 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8d8d67a-334b-4793-8114-86e1232ff226" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/spring-boot-jwt/src/main/java/com/soft1851/spring/boot/jwt/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-jwt/src/main/java/com/soft1851/spring/boot/jwt/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-jwt/src/main/java/com/soft1851/spring/boot/jwt/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-jwt/src/main/java/com/soft1851/spring/boot/jwt/exception/GlobalResponseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/SpringBootMybatisPlusApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/controller/RolePermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/controller/SysPermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/controller/SysRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/controller/SysUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/controller/TStudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/controller/UserRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/entity/SysUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/mapper/RolePermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/mapper/SysPermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/mapper/SysRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/mapper/SysUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/mapper/TStudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/mapper/UserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/model/RolePermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/model/SysPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/model/SysRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/model/SysUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/model/TStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/model/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/service/RolePermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/service/SysPermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/service/SysRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/service/SysUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/service/TStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/service/UserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/service/impl/RolePermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/service/impl/SysPermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/service/impl/TStudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/mbp/service/impl/UserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/test/time/HelloWorldJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/test/time/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/test/time/MyScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/test/time/QuarFirstJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/test/timer/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java/com/soft1851/springboot/test/timer/SignIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/resources/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/resources/mapper/RolePermission.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/resources/mapper/SysPermission.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/resources/mapper/SysRole.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/resources/mapper/SysUser.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/resources/mapper/TStudent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/resources/mapper/UserRole.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/resources/mybatis-plus.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/resources/quarz.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/test/java/com/soft1851/springboot/mbp/SpringBootMybatisPlusApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/test/java/com/soft1851/springboot/mbp/generate/MybatisPlusGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/test/java/com/soft1851/springboot/mbp/mapper/SysUserMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/test/java/com/soft1851/springboot/mbp/mapper/UserRoleMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mybatis-plus/src/test/java/com/soft1851/springboot/mbp/service/UserRoleServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-oauth/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-oauth/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-oauth/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-oauth/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-oauth/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-oauth/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-oauth/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-oauth/src/main/java/com/soft1851/spring/boot/oauth/SpringBootOauthApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-oauth/src/main/java/com/soft1851/spring/boot/oauth/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-oauth/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-oauth/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-oauth/src/test/java/com/soft1851/spring/boot/oauth/SpringBootOauthApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/ValidatorApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/annoration/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/annoration/Region.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/common/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/controller/PersonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/exception/APIException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/handler/ExceptionControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/handler/ResponseControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/service/PersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/service/PhoneValidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/validators/RegionValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/java/com/soft1851/validator/vo/ResultVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/test/java/com/soft1851/validator/ValidatorApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/test/java/com/soft1851/validator/controller/PersonControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/test/java/com/soft1851/validator/service/PersonServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-validator/src/test/java/com/soft1851/validator/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/EasyCodeConfig/db_ntt-sys_user.json" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/db_ntt-sys_user.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/classes/META-INF/spring-boot-aop.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/classes/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/classes/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/classes/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/spring-boot-aop-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/spring-boot-aop-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/surefire-reports/TEST-com.soft1851.springboot.aop.SpringBootAopApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/surefire-reports/TEST-com.soft1851.springboot.aop.controller.HelloControllerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/surefire-reports/TEST-com.soft1851.springboot.aop.controller.UserMapperTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/surefire-reports/TEST-com.soft1851.springboot.aop.controller.UserSoft1851ControllerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/surefire-reports/com.soft1851.springboot.aop.SpringBootAopApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/surefire-reports/com.soft1851.springboot.aop.controller.HelloControllerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/surefire-reports/com.soft1851.springboot.aop.controller.UserMapperTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aop/target/surefire-reports/com.soft1851.springboot.aop.controller.UserSoft1851ControllerTest.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,22 +171,22 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="db_ntt: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_ntt@rm-m5ee476bu350735gjeo.mysql.rds.aliyuncs.com" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_ntt: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="sys_permission: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="spring-boot-learning" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="spring-beans.schema" />
+        <option value="HTML File" />
         <option value="AnnotationType" />
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -68,6 +200,11 @@
         <option name="mavenHome" value="$PROJECT_DIR$/../../../newIDEAandEclipse/apache-maven-3.6.1" />
         <option name="userSettingsFile" value="D:\CompcuteApplication\newIDEAandEclipse\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1aTa0ai8xXR88B45SBjibkpI4y0" />
@@ -83,6 +220,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -92,142 +230,141 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="D:/360MoveData/Users/lenovo/Desktop/spring-boot-jwt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-oauth/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15625" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.soft1851.validator.service" />
+      <recent name="com.soft1851.validator.controller" />
+      <recent name="com.soft1851.springboot.mbp.mapper" />
+      <recent name="com.soft1851.springboot.mbp.service" />
       <recent name="com.soft1851.springboot.aop.controller" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\spring-boot-learning\spring-boot-aop\src\main\java\com\soft1851\springboot\aop\result" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\spring-boot-learning\spring-boot-mybatis-plus\src\main\resources\mapper" />
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\spring-boot-learning\spring-boot-aop\src\main\java\com\soft1851\springboot\aop\result" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.soft1851.validator.service" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.soft1851.validator.annoration" />
+      <recent name="com.soft1851.springboot.test.timer" />
+      <recent name="" />
       <recent name="com.soft1851.spring.boot.jwt.util" />
       <recent name="com.soft1851.springboot.aop.config" />
-      <recent name="com.soft1851.springboot.aop.util" />
-      <recent name="com.soft1851.springboot.aop.controller" />
-      <recent name="com.soft1851.springboot.aop.mapper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\spring-boot-learning\spring-boot-oauth\src\main\resources" />
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\spring-boot-learning\spring-boot-mybatis-plus\src\main\resources" />
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\spring-boot-learning\spring-boot-mybatis-plus\src\test\java\com\soft1851\springboot\mbp\generate" />
       <recent name="D:\CompcuteApplication\projectTest\SpringStudy\spring-boot-learning\spring-boot-jwt\src\main\java\com\soft1851\spring\boot\jwt\common" />
       <recent name="D:\CompcuteApplication\projectTest\SpringStudy\spring-boot-learning\spring-boot-aop\src\main\java\com\soft1851\springboot\aop\common" />
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\spring-boot-learning\spring-boot-aop\src\main\java\com\soft1851\springboot\aop\controller" />
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\spring-boot-learning\spring-boot-aop\src\main\java\com\soft1851\springboot\aop\result" />
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\spring-boot-learning\spring-boot-aop\src\main\resources" />
     </key>
   </component>
   <component name="RestServicesNavigator">
     <treeState>
       <expand>
         <path>
-          <item name="Found 17 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 21 services " type="fcff1e1b:RestServiceStructure$RootNode" />
         </path>
         <path>
-          <item name="Found 17 services " type="fcff1e1b:RestServiceStructure$RootNode" />
-          <item name="spring-boot-jwt" type="c588b436:RestServiceStructure$ProjectNode" />
+          <item name="Found 21 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="spring-boot-validator" type="c588b436:RestServiceStructure$ProjectNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootJwtApplication">
-    <configuration name="JwtTokenUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1851.spring.boot.jwt.util.JwtTokenUtil" />
-      <module name="spring-boot-jwt" />
+  <component name="RunManager" selected="Spring Boot.ValidatorApplication">
+    <configuration name="PersonControllerTest.savePerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-validator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.soft1851.spring.boot.jwt.util.*" />
+          <option name="PATTERN" value="com.soft1851.validator.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MD5Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1851.springboot.aop.util.MD5Util" />
-      <module name="spring-boot-aop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.soft1851.springboot.aop.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1851.spring.boot.jwt.test.Test" />
-      <module name="spring-boot-jwt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.soft1851.spring.boot.jwt.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserMapperTest.selectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-boot-aop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.soft1851.springboot.aop.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.soft1851.springboot.aop.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.soft1851.springboot.aop.controller.UserMapperTest" />
-      <option name="METHOD_NAME" value="selectAll" />
+      <option name="PACKAGE_NAME" value="com.soft1851.validator.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.validator.controller.PersonControllerTest" />
+      <option name="METHOD_NAME" value="savePerson" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringBootAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="spring-boot-aop" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.soft1851.springboot.aop.SpringBootAopApplication" />
+    <configuration name="PersonServiceTest.checkManually" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-validator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.validator.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.soft1851.validator.service" />
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.validator.service.PersonServiceTest" />
+      <option name="METHOD_NAME" value="checkManually" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringBootJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="spring-boot-jwt" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.soft1851.spring.boot.jwt.SpringBootJwtApplication" />
+    <configuration name="PersonServiceTest.validatePerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-validator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.validator.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.soft1851.validator.service" />
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.validator.service.PersonServiceTest" />
+      <option name="METHOD_NAME" value="validatePerson" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.MD5Util" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.JwtTokenUtil" />
-      <item itemvalue="JUnit.UserMapperTest.selectAll" />
-      <item itemvalue="Spring Boot.SpringBootAopApplication" />
-      <item itemvalue="Spring Boot.SpringBootJwtApplication" />
-    </list>
+    <configuration name="SpringBootOauthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.spring.boot.oauth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.soft1851.spring.boot.oauth.SpringBootOauthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidatorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-validator" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.soft1851.validator.ValidatorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JwtTokenUtil" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="JUnit.UserMapperTest.selectAll" />
-        <item itemvalue="Application.MD5Util" />
+        <item itemvalue="JUnit.PersonServiceTest.checkManually" />
+        <item itemvalue="JUnit.PersonServiceTest.validatePerson" />
+        <item itemvalue="JUnit.PersonControllerTest.savePerson" />
+        <item itemvalue="Spring Boot.SpringBootOauthApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -260,8 +397,35 @@
       <workItem from="1586867680352" duration="1838000" />
       <workItem from="1586909556292" duration="10389000" />
       <workItem from="1586932325008" duration="19708000" />
-      <workItem from="1586961117884" duration="194000" />
+      <workItem from="1586961117884" duration="544000" />
+      <workItem from="1586993787977" duration="24439000" />
+      <workItem from="1587106069552" duration="4017000" />
+      <workItem from="1587195589771" duration="1017000" />
+      <workItem from="1587197229829" duration="190000" />
+      <workItem from="1587198041056" duration="1267000" />
+      <workItem from="1587303382011" duration="6800000" />
+      <workItem from="1587346979972" duration="7708000" />
+      <workItem from="1587427637915" duration="1877000" />
+      <workItem from="1587437606861" duration="30000" />
+      <workItem from="1587439051791" duration="64000" />
+      <workItem from="1587448748624" duration="2097000" />
+      <workItem from="1587466178871" duration="779000" />
+      <workItem from="1587645539061" duration="140000" />
+      <workItem from="1587696490955" duration="958000" />
+      <workItem from="1587697740360" duration="630000" />
+      <workItem from="1587869982562" duration="56000" />
+      <workItem from="1588123397380" duration="16633000" />
+      <workItem from="1588153534199" duration="4591000" />
+      <workItem from="1588207502166" duration="23128000" />
     </task>
+    <task id="LOCAL-00001" summary="全局异常处理修改">
+      <created>1586961489740</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586961489740</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,92 +433,110 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="全局异常处理修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="全局异常处理修改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="722" y="74" key="#Auto_Import" timestamp="1586949081170">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="722" y="74" key="#Auto_Import/0.0.1536.824@0.0.1536.824" timestamp="1586949081170" />
-    <state x="142" y="132" width="1150" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586835340204">
+    <state x="254" y="73" width="1150" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588124779376">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="142" y="132" width="1150" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586835340204" />
-    <state x="209" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1586946298954">
+    <state x="254" y="73" width="1150" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588124779376" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1588239165883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="209" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586946298954" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1588239165883" />
+    <state x="798" y="295" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1588134738061">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="798" y="295" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1536.824@0.0.1536.824" timestamp="1588134738061" />
+    <state x="656" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1588250323337">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="656" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1588250323337" />
     <state x="196" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586769068342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="196" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1586769068342" />
-    <state x="548" y="271" width="470" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586774250974">
+    <state x="548" y="271" width="474" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588251647836">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="271" width="470" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1586774250974" />
+    <state x="548" y="271" width="474" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1588251647836" />
     <state x="379" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586774319857">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="379" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1586774319857" />
-    <state x="564" y="324" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586761903847">
+    <state x="564" y="318" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587307144391">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="564" y="324" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586761903847" />
+    <state x="564" y="318" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587307144391" />
+    <state x="213" y="0" key="CommitChangelistDialog2" timestamp="1586961469528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="213" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586961469528" />
     <state x="888" y="206" key="FileChooserDialogImpl" timestamp="1586939988909">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="888" y="206" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586939988909" />
-    <state width="1493" height="106" key="GridCell.Tab.0.bottom" timestamp="1586959247230">
+    <state width="723" height="183" key="GridCell.Tab.0.bottom" timestamp="1588252395210">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="106" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586959247230" />
+    <state width="723" height="183" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588252395210" />
     <state width="1493" height="84" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586926180387" />
-    <state width="1493" height="106" key="GridCell.Tab.0.center" timestamp="1586959247229">
+    <state width="723" height="183" key="GridCell.Tab.0.center" timestamp="1588252395210">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="106" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586959247229" />
+    <state width="723" height="183" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588252395210" />
     <state width="1493" height="84" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586926180387" />
-    <state width="1493" height="106" key="GridCell.Tab.0.left" timestamp="1586959247229">
+    <state width="723" height="183" key="GridCell.Tab.0.left" timestamp="1588252395210">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="106" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586959247229" />
+    <state width="723" height="183" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588252395210" />
     <state width="1493" height="84" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586926180387" />
-    <state width="1493" height="106" key="GridCell.Tab.0.right" timestamp="1586959247230">
+    <state width="723" height="183" key="GridCell.Tab.0.right" timestamp="1588252395210">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="106" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586959247230" />
+    <state width="723" height="183" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588252395210" />
     <state width="1493" height="84" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586926180387" />
-    <state width="1493" height="106" key="GridCell.Tab.1.bottom" timestamp="1586959247230">
+    <state width="723" height="183" key="GridCell.Tab.1.bottom" timestamp="1588252395210">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="106" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586959247230" />
+    <state width="723" height="183" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588252395210" />
     <state width="1493" height="280" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586919800284" />
-    <state width="1493" height="106" key="GridCell.Tab.1.center" timestamp="1586959247230">
+    <state width="723" height="183" key="GridCell.Tab.1.center" timestamp="1588252395210">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="106" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586959247230" />
+    <state width="723" height="183" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1588252395210" />
     <state width="1493" height="280" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1586919800284" />
-    <state width="1493" height="106" key="GridCell.Tab.1.left" timestamp="1586959247230">
+    <state width="723" height="183" key="GridCell.Tab.1.left" timestamp="1588252395210">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="106" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586959247230" />
+    <state width="723" height="183" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1588252395210" />
     <state width="1493" height="280" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1586919800284" />
-    <state width="1493" height="106" key="GridCell.Tab.1.right" timestamp="1586959247230">
+    <state width="723" height="183" key="GridCell.Tab.1.right" timestamp="1588252395210">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="106" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586959247230" />
+    <state width="723" height="183" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588252395210" />
     <state width="1493" height="280" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1586919800284" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1586834235129">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1586834235129" />
-    <state x="540" y="104" key="SettingsEditor" timestamp="1586857817331">
+    <state x="498" y="0" key="SettingsEditor" timestamp="1588238214132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="540" y="104" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586857817331" />
+    <state x="498" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588238214132" />
     <state width="609" height="468" key="SwitcherDM" timestamp="1586775849481">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="609" height="468" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1586775849481" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586961481953">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586961481953" />
     <state x="587" y="269" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586775564389">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -363,19 +545,35 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="50" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1586775110530" />
-    <state x="882" y="133" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586770279480">
+    <state x="560" y="97" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586994478009">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="882" y="133" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1586770279480" />
-    <state x="356" y="206" key="new project wizard" timestamp="1586918222132">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="560" y="97" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1586994478009" />
+    <state x="882" y="133" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588242523466">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="308" y="227" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586916712840" />
+    <state x="882" y="133" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1588242523466" />
+    <state x="751" y="131" width="782" height="590" key="find.popup" timestamp="1587004573744">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="751" y="131" width="782" height="590" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1587004573744" />
+    <state x="212" y="194" key="new project wizard" timestamp="1588231546644">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="212" y="194" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1588231546644" />
     <state x="356" y="206" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1586918222132" />
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1586950967144">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1587360716870">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586950967144" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1587360716870" />
+    <state x="430" y="145" width="672" height="160" key="search.everywhere.popup" timestamp="1588238781062">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="430" y="145" width="672" height="160" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588238781062" />
     <state x="431" y="152" width="672" height="711" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1586919077973" />
+    <state x="157" y="95" key="spring file set editor" timestamp="1587310133962">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="157" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1587310133962" />
   </component>
 </project>

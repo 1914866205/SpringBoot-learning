@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-aop/spring-boot-aop.iml" filepath="$PROJECT_DIR$/spring-boot-aop/spring-boot-aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-jwt/spring-boot-jwt.iml" filepath="$PROJECT_DIR$/spring-boot-jwt/spring-boot-jwt.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-learning.iml" filepath="$PROJECT_DIR$/spring-boot-learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis-plus/spring-boot-mybatis-plus.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis-plus/spring-boot-mybatis-plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-oauth/spring-boot-oauth.iml" filepath="$PROJECT_DIR$/spring-boot-oauth/spring-boot-oauth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-validator/spring-boot-validator.iml" filepath="$PROJECT_DIR$/spring-boot-validator/spring-boot-validator.iml" />
     </modules>
   </component>
 </project>

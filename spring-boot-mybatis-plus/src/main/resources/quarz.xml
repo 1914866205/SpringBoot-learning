@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="QuarFirstJob" class="com.soft1851.springboot.test.time.QuarFirstJob"/>
+    <bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="group" value="quartzGroup1"/>
+        <property name="name" value="quartzJob1"/>
+
+        <!--        false表示等上一个任务执行完后再开启新的任务-->
+        <property name="concurrent" value="false"/>
+        <property name="targetObject">
+            <ref bean="QuarFirstJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>first</value>
+        </property>
+    </bean>
+
+    <!--    调度触发器-->
+    <bean id="myTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="name" value="trigger1"/>
+        <property name="group" value="group1"/>
+        <property name="jobDetail">
+            <ref bean="jobDetail"/>
+        </property>
+        <property name="cronExpression">
+            <value>0/5 * * * * ?</value>
+        </property>
+    </bean>
+
+    <!--    调度工厂-->
+    <bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="myTrigger"/>
+            </list>
+        </property>
+    </bean>
+
+</beans>

@@ -10,5 +10,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-aop</module>
+        <module>spring-boot-jwt</module>
+        <module>spring-boot-mybatis-plus</module>
+        <module>spring-boot-oauth</module>
+        <module>spring-boot-validator</module>
     </modules>
 </project>

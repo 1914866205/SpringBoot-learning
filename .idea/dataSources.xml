@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://rm-m5ee476bu350735gjeo.mysql.rds.aliyuncs.com/db_ntt?useSSL=false&amp;serverTimezone=UTC&amp;Unicode=true&amp;characterEncoding=utf-8&amp;allowMultiQueries=true</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="springtest@localhost" uuid="504fb7e9-5d1c-4723-b430-b6f5ff28f475">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/springtest?useSSL=false&amp;serverTimezone=UTC&amp;Unicode=true&amp;characterEncoding=utf-8&amp;allowMultiQueries=true</jdbc-url>
+    </data-source>
   </component>
 </project>

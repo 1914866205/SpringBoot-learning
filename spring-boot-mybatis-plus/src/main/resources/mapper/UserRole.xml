@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soft1851.springboot.mbp.mapper.UserRoleMapper">
+
+
+    <resultMap id="PermissionMap" type="com.soft1851.springboot.mbp.model.SysPermission">
+        <id column="p_id" property="pId" />
+        <result column="p_name" property="pName"/>
+        <result column="type" property="type" />
+        <result column="icon" property="icon" />
+        <result column="path" property="path" />
+        <result column="ex1" property="ex1" />
+        <result column="ex2" property="ex2" />
+    </resultMap>
+    <select id="getUserPermissionById" parameterType="Integer" resultMap="PermissionMap">
+        SELECT * FROM  sys_permission
+        WHERE p_id IN(
+            SELECT permission_id
+            FROM role_permission
+            WHERE role_id=(SELECT role_id
+                           FROM user_role
+                           WHERE user_id=#{id}
+            )
+        )
+    </select>
+
+</mapper>
