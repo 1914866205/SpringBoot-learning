@@ -10,7 +10,6 @@ import javax.validation.*;
 import java.io.PipedReader;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @Validated
 class PersonServiceTest {
